@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ajax jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/img/chao.jpg" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <title>Chao Shop</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="./" class="nav__logo">
+                <h2>Chao Shop</h2>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Dịch vụ </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#collection" class="nav__link">
+                            <i class="ri-compass-line"></i>
+                            <span>Bộ sưu tập</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">
+                            <i class="ri-handbag-line"></i>
+                            <span>Sản phẩm</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">
+                            <i class="ri-handbag-line"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title"><span id="hero-titles"></span> </h1>
+
+                    <p class="home__description">
+                        Giới thiệu chung về website. Slogan... <br>
+                        Committed to bringing you the <br>
+                        best clothing from popular <br>
+                        brands
+                    </p>
+
+                    <a href="#services" class="button__link">
+                        Explore <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__images">
+                    <img src="./assets/img/chao4.jpg" alt="home image">
+                    <img src="./assets/img/chao2.jpg" alt="home image">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section" id="services">
+            <h2 class="section__title">
+                Dịch vụ của chúng tôi
+            </h2>
+
+            <div class="new__container container grid">
+                <article class="new__card">
+                    <img src="./assets/img/chao5.jpg" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Custom túi xách theo yêu cầu
+                            </h2>
+                            <span>
+                                <button class="btn">Đăng ký</button>
+                            </span>
+                        </div>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+                <article class="new__card">
+                    <img src="./assets/img/chao6.jpg" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Custom túi xách kèm phụ kiện
+                            </h2>
+                            <span><button class="btn">Đăng ký</button></span>
+                        </div>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== COLLECTION ====================-->
+        <section class="collection section" id="collection">
+            <h2 class="section__title">
+                Bộ sưu tập
+            </h2>
+            <div class="collection__container container">
+                <div class="collection__explore">
+                    <div class="collection__data-men">
+                        <h2 class="collection__title">
+                            Phong cách <br> hiện đại
+                        </h2>
+
+                        <a href="#" class="button__link">
+                            Khám phá
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                    <img src="./assets/img/chao6.jpg" alt="collection image">
+                </div>
+
+                <div class="collection__explore">
+                    <img src="./assets/img/chao.jpg" alt="collection image">
+
+                    <div class="collection__data-women">
+                        <h2 class="collection__title">
+                            Phong cách <br> cổ điển
+                        </h2>
+
+                        <a href="#" class="button__link">
+                            Khám phá
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section" id="products">
+            <h2 class="section__title">
+                Danh sách sản phẩm
+            </h2>
+
+            <div class="product__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img  src="assets/img/chao.jpg" alt="product img"
+                                class="products__img">
+                            <h2 class="products__title">
+                                Product 1
+                            </h2>
+                            <span class="products__price">
+                                100d
+                            </span>
+                            <button data-image="assets/img/chao.jpg" class="btn">Mua ngay</button>
+                        </div>
+                    </article>
+
+
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img  src="assets/img/chao4.jpg" alt="product img"
+                                class="products__img">
+                            <h2 class="products__title">
+                                Product 2
+                            </h2>
+
+                            <span class="products__price">
+                                200d
+                            </span>
+                            <button data-image="assets/img/chao4.jpg" class="btn">Mua ngay</button>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+
+                            <img  src="assets/img/chao2.jpg" alt="product img"
+                                class="products__img">
+                            <h2 class="products__title">
+                                Product 3
+                            </h2>
+
+                            <span class="products__price">
+                                300d
+                            </span>
+                            <button data-image="assets/img/chao2.jpg" class="btn">Mua ngay</button>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img  src="assets/img/chao3.jpg" alt="product img"
+                                class="products__img">
+                            <h2 class="products__title">
+                                Product 4
+                            </h2>
+
+                            <span class="products__price">
+                                400d
+                            </span>
+                            <button data-image="./assets/img/chao3.jpg" class="btn">Mua ngay</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== BRANDS ====================-->
+        <section class="brand section">
+            <h2 class="section__title">
+                Thương hiệu
+            </h2>
+
+            <div class="brand__container container grid">
+                <img src="./assets/img/logo1.png" alt="brand img" class="brand__img">
+                <img src="./assets/img/logo2.png" alt="brand img" class="brand__img">
+                <img src="./assets/img/logo3.png" alt="brand img" class="brand__img">
+                <img src="./assets/img/logo4.png" alt="brand img" class="brand__img">
+
+            </div>
+        </section>
+
+        <!--==================== CONTACTs ====================-->
+        <section id="contacts" class="contact section">
+            <h2 class="section__title">
+                Liên hệ
+            </h2>
+            <div class="container">
+                <div class="grid">
+                    <div class="contact-info" data-aos="fade-up">
+                        <div class="section-intro">
+                            <h1 class="heading-2">Contact Info</h1>
+                        </div>
+                        <div class="contact-widget">
+                            <h3 class="footer__title">
+                                Office
+                            </h3>
+                            <p class="footer__information">
+                                Monday-Saturday <br>
+                                8AM-10PM
+                            </p>
+                        </div>
+                        <div class="contact-widget">
+                            <h3>
+                                Email
+                            </h3>
+                            <ul>
+                                <li>chao123@gmail.com</li>
+                                <li>thuanh123@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="contact-widget">
+                            <h3>
+                                Phone
+                            </h3>
+                            <ul>
+                                <li>0123.123.123</li>
+                                <li>0232.323.232</li>
+                            </ul>
+                        </div>
+                        <div class="contact-widget">
+                            <h3>
+                                Address
+                            </h3>
+                            <ul>
+                                <li>Thụy Khuê, Sài Sơn</li>
+                                <li>Yên Nội, Đồng Quang</li>
+                            </ul>
+                        </div>
+                        <div class="contact-widget">
+                            <h3 class="footer__title">
+                                Contact us
+                            </h3>
+                            <ul style="text-decoration: none;" class="footer__social">
+                                <li><a href="https://www.fb.com/ndt.161001" target="_blank"
+                                        class="footer__social-link"><i class="ri-facebook-fill"></i></a></li>
+                                <li><a href="#" target="_blank" class="footer__social-link"><i
+                                            class="ri-instagram-line"></i></a></li>
+                                <li><a href="#" target="_blank" class="footer__social-link"><i
+                                            class="ri-whatsapp-line"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-up">
+                        <div class="section-intro">
+                            <h1 class="heading-2">Drop us a line</h1>
+                        </div>
+                        <form method="post" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" class="form-input"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" id="email" class="form-input"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" id="phone" class="form-input"
+                                    placeholder="Enter your phone" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" class="form-input" cols="30" rows="5"
+                                    autocomplete="off" placeholder="Hi there..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn" id="sendBtn" type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- add modal -->
+    <div class="modal" id="modalBuy" tabindex="-1" role="dialog" aria-labelledby="buyModel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalCenterTitle">Order</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Phần bên trái: Thông tin sản phẩm -->
+                        <div class="col-md-6">
+                            <h5>Product Information</h5>
+                            <form id="buyForm" method="post">
+                                <div class="form-group">
+                                    <label for="txtProductName">Product Name</label>
+                                    <input type="text" name="productName" id="txtProductName" class="form-control"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <img id="productImage1" src="" alt="Product Image"
+                                        style="max-width: 100px; height: 100px;">
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="txtProductUnitPrice">Unit Price</label>
+                                            <input type="text" name="unitPrice" id="txtProductUnitPrice"
+                                                class="form-control" readonly style="color: red;">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="txtQuantity">Quantity</label>
+                                            <input type="number" min="1" name="quantity" id="txtQuantity"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtTotalPrice">Total Price</label>
+                                    <input type="text" name="totalPrice" id="txtTotalPrice" class="form-control"
+                                        readonly>
+                                </div>
+                        </div>
+                        <!-- Phần bên phải: Thông tin giao hàng -->
+                        <div class="col-md-6">
+                            <h5>Delivery Information</h5>
+                            <div class="form-group">
+                                <label for="txtCustomerName">Customer Name</label><label style="color: red;">*</label>
+                                <input type="text" name="customerName" id="txtCustomerName" class="form-control"
+                                    placeholder="Enter your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCustomerEmail">Customer Email</label>
+                                <input type="email" name="customerEmail" id="txtCustomerEmail" class="form-control"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCustomerPhone">Customer Phone</label><label style="color: red;">*</label>
+                                <input type="text" name="customerPhone" id="txtCustomerPhone" class="form-control"
+                                    placeholder="Enter your phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtAddress">Address</label><label style="color: red;">*</label>
+                                <input type="text" name="address" id="txtAddress" class="form-control"
+                                    placeholder="Enter shipping address" required>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" style="color: black;" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                    <button type="button" style="color: black;" class="btn btn-primary" id="btnInsert">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__info container">
+            <span class="footer__copy">
+                Copyright @2024. All rights reserved
+            </span>
+
+            <a href="#" class="footer__privacy">Terms & Conditions</a>
+        </div>
+    </footer>
+
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var btnBuy = document.getElementById('btnInsert');
+            btnBuy.addEventListener('click', () => {
+                // Lấy giá trị của các trường nhập liệu
+                var customerName = document.getElementById('txtCustomerName').value.trim();
+                var customerPhone = document.getElementById('txtCustomerPhone').value.trim();
+                var address = document.getElementById('txtAddress').value.trim();
+
+                // Kiểm tra xem các trường có trống không
+                if (customerName === '' || customerPhone === '' || address === '') {
+                    // Ngăn chặn hành động mặc định của form (gửi đi)
+                    event.preventDefault();
+
+                    // Hiển thị thông báo lỗi
+                    alert('Please fill in all required fields.');
+                } else {
+                    document.getElementById('buyForm').submit();
+
+                    var modal = document.getElementById('modalBuy');
+                    modal.classList.remove('show');
+                    // // Ẩn modal bằng cách đặt style.display thành "none"
+                    modal.style.display = "none";
+
+                    // Loại bỏ lớp 'show' từ overlay khi đóng modal
+                    overlay.classList.remove('show');
+                }
+            })
+
+            // Lấy tất cả các nút "Buy now" trong các sản phẩm
+            var buyButtons = document.querySelectorAll('.products__card .productss  .btn');
+
+            // Lặp qua từng nút và thêm sự kiện click
+            buyButtons.forEach(function (button) {
+                button.addEventListener('click', function (event) {
+                    // Ngăn chặn hành vi mặc định của nút
+                    event.preventDefault();
+
+                    // Lấy ra thông tin sản phẩm tương ứng
+                    var product = this.closest('.products__card .productss');
+                    var productName = product.querySelector('h2').innerText;
+                    var price = product.querySelector('span').innerText;
+                    var productImage = this.getAttribute('data-image');
+
+                    // Đặt các giá trị vào form buymodal
+                    document.getElementById('txtProductName').value = productName;
+                    document.getElementById('txtProductUnitPrice').value = price;
+                    document.getElementById('productImage1').src = productImage;
+
+                    calculateTotalPrice();
+
+                    // Mở modal
+                    var modal = document.getElementById('modalBuy');
+                    modal.classList.add('show');
+                    modal.style.display = 'block';
+                    // Thêm lớp 'show' vào overlay khi mở modal
+                    overlay.classList.add('show');
+                });
+            });
+
+            // Set default minimum value for quantity input
+            var quantityInput = document.getElementById('txtQuantity');
+
+            quantityInput.value = '1'; // Set default value to 1
+
+
+            // Function to calculate total price
+            function calculateTotalPrice() {
+                // Get quantity and unit price
+                var quantity = parseInt(quantityInput.value);
+                var unitPrice = parseFloat(document.getElementById('txtProductUnitPrice').value.replace(',', ''));
+                // Calculate total price
+                var totalPrice = quantity * unitPrice;
+                // Set total price value
+                document.getElementById('txtTotalPrice').value = totalPrice + 'đ';
+            }
+
+            // Call calculateTotalPrice function when quantity input changes
+            quantityInput.addEventListener('input', calculateTotalPrice);
+
+            // Call calculateTotalPrice function initially to set the total price based on default quantity
+            calculateTotalPrice();
+
+            // Lấy ra tất cả các nút close và các button có class "btn-secondary"
+            var closeButtons = document.querySelectorAll(".modal .close, .modal button.btn-secondary");
+            var overlay = document.querySelector(".overlay");
+
+            // Thêm sự kiện click cho từng nút close
+            closeButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+
+                    var modal = document.getElementById('modalBuy');
+                    modal.classList.remove('show');
+                    // // Ẩn modal bằng cách đặt style.display thành "none"
+                    modal.style.display = "none";
+
+                    // Loại bỏ lớp 'show' từ overlay khi đóng modal
+                    overlay.classList.remove('show');
+                });
+            });
+
+        });
+    </script>
+
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
