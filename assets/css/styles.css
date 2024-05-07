@@ -44,6 +44,11 @@
   --z-fixed: 100;
 }
 
+#logo_text{
+  /* font-family: "Sofia", sans-serif; */
+  text-shadow: 3px 3px 3px #ababab;
+}
+
 @media screen and (min-width: 1124px) {
   :root {
     --biggest-font-size: 2.75rem;
