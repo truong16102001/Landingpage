@@ -12,7 +12,7 @@
 
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="./assets/img/chao.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/LOGO- C THỦY.jpg" type="image/x-icon">
 
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
@@ -43,17 +43,18 @@
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a href="#collection" class="nav__link">
+                            <i class="ri-compass-line"></i>
+                            <span>Giới thiệu</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#services" class="nav__link">
                             <i class="ri-price-tag-3-line"></i>
                             <span>Dịch vụ </span>
                         </a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#collection" class="nav__link">
-                            <i class="ri-compass-line"></i>
-                            <span>Bộ sưu tập</span>
-                        </a>
-                    </li>
+
                     <li class="nav__item">
                         <a href="#products" class="nav__link">
                             <i class="ri-handbag-line"></i>
@@ -79,7 +80,7 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__data">
-                    <h1 class="home__title"><span id="hero-titles"></span> </h1>
+                    <h2 class="home__title"><span id="hero-titles"></span> </h2>
 
                     <p class="home__description">
                         Giới thiệu chung về website. Slogan... <br>
@@ -88,7 +89,7 @@
                         brands
                     </p>
 
-                    <a href="#services" class="button__link">
+                    <a href="#collection" class="button__link">
                         Explore <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -100,149 +101,181 @@
             </div>
         </section>
 
+
+        <!--==================== COLLECTION ====================-->
+        <section class="collection section" id="collection">
+            <h2 class="section__title">
+                Về chúng tôi
+            </h2>
+            <div class="collection__container container">
+                <div class="collection__explore">
+                    <div class="collection__data-men">
+                        <ul>
+                            <li><b>Sứ mệnh:</b> Bằng chính sự tinh thông vượt bậc trong lĩnh vực thời trang, <br>
+                                Elite nỗ lực mang đến cho khách hàng một chiếc túi xách độc đáo, độc đáo,
+                                <br>chất lượng phù hợp với nhu cầu sử dụng và phong cách của riêng họ.
+                            </li>
+                        </ul>
+                    </div>
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed/QF8IIC3bKTk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="collection__explore">
+                    <iframe width="450" height="315" src="https://www.youtube.com/embed/c4MTzKEpcFY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div style="margin-left: 100px;" class="collection__data-women">
+                        <ul>
+                            <li><b>Tầm nhìn:</b> Trở thành doanh nghiệp hàng đầu chuyên cung cấp dịch vụ custom túi xách
+                                hàng hiệu
+                                <br> khu vực thành phố Hà Nội nói riêng và toàn quốc nói chung.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!--==================== NEW ====================-->
         <section class="new section" id="services">
             <h2 class="section__title">
-                Dịch vụ của chúng tôi
+                Dịch vụ
             </h2>
 
             <div class="new__container container grid">
                 <article class="new__card">
                     <img src="./assets/img/chao5.jpg" alt="new image" class="new__img">
 
-                    <a href="#" class="new__link">
+                    <div class="new__link">
                         <div class="new__data">
                             <h2 class="new__title">
                                 Custom túi xách theo yêu cầu
                             </h2>
                             <span>
-                                <button class="btn">Đăng ký</button>
+                                <button class="btn" id="registerCustomBtn">Đăng ký</button>
                             </span>
                         </div>
                         <i class="ri-arrow-right-line"></i>
-                    </a>
+                    </div>
                 </article>
                 <article class="new__card">
                     <img src="./assets/img/chao6.jpg" alt="new image" class="new__img">
 
-                    <a href="#" class="new__link">
+                    <div class="new__link">
                         <div class="new__data">
                             <h2 class="new__title">
-                                Custom túi xách kèm phụ kiện
+                                Bảo hành
                             </h2>
-                            <span><button class="btn">Đăng ký</button></span>
+                            <span><button class="btn" id="registerInsuranceBtn">Đăng ký</button></span>
                         </div>
                         <i class="ri-arrow-right-line"></i>
-                    </a>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <!--==================== COLLECTION ====================-->
-        <section class="collection section" id="collection">
-            <h2 class="section__title">
-                Bộ sưu tập
-            </h2>
-            <div class="collection__container container">
-                <div class="collection__explore">
-                    <div class="collection__data-men">
-                        <h2 class="collection__title">
-                            Phong cách <br> hiện đại
-                        </h2>
-
-                        <a href="#" class="button__link">
-                            Khám phá
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                    <img src="./assets/img/chao6.jpg" alt="collection image">
-                </div>
-
-                <div class="collection__explore">
-                    <img src="./assets/img/chao.jpg" alt="collection image">
-
-                    <div class="collection__data-women">
-                        <h2 class="collection__title">
-                            Phong cách <br> cổ điển
-                        </h2>
-
-                        <a href="#" class="button__link">
-                            Khám phá
-                            <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!--==================== PRODUCTS ====================-->
         <section class="products section" id="products">
             <h2 class="section__title">
-                Danh sách sản phẩm
+                Sản phẩm
             </h2>
 
             <div class="product__container container swiper">
                 <div class="swiper-wrapper">
                     <article class="products__card swiper-slide">
                         <div class="productss">
-                            <img  src="assets/img/chao.jpg" alt="product img"
+                            <img src="assets/img/BOX BAG - NIKE_15x19x32x40.jpg" alt="product img"
                                 class="products__img">
                             <h2 class="products__title">
-                                Product 1
+                                BOX BAG - NIKE
                             </h2>
-                            <span class="products__price">
-                                100d
-                            </span>
-                            <button data-image="assets/img/chao.jpg" class="btn">Mua ngay</button>
+                            <button data-image="assets/img/BOX BAG - NIKE_15x19x32x40.jpg" class="btn">Mua ngay</button>
                         </div>
                     </article>
 
 
                     <article class="products__card swiper-slide">
                         <div class="productss">
-                            <img  src="assets/img/chao4.jpg" alt="product img"
+                            <img src="assets/img/BOX BAG LX-NIKE 01_15x19x32x40.jpg" alt="product img"
                                 class="products__img">
                             <h2 class="products__title">
-                                Product 2
+                                BOX BAG LX-NIKE 01
                             </h2>
-
-                            <span class="products__price">
-                                200d
-                            </span>
-                            <button data-image="assets/img/chao4.jpg" class="btn">Mua ngay</button>
+                            <button data-image="assets/img/BOX BAG LX-NIKE 01_15x19x32x40.jpg" class="btn">Mua
+                                ngay</button>
                         </div>
 
                     </article>
 
                     <article class="products__card swiper-slide">
                         <div class="productss">
-
-                            <img  src="assets/img/chao2.jpg" alt="product img"
-                                class="products__img">
+                            <img src="assets/img/LX - HERMES_15x19x32x40.jpg" alt="product img" class="products__img">
                             <h2 class="products__title">
-                                Product 3
+                                LX - HERMES
                             </h2>
-
-                            <span class="products__price">
-                                300d
-                            </span>
-                            <button data-image="assets/img/chao2.jpg" class="btn">Mua ngay</button>
+                            <button data-image="assets/img/LX - HERMES_15x19x32x40.jpg" class="btn">Mua ngay</button>
                         </div>
-
                     </article>
 
                     <article class="products__card swiper-slide">
                         <div class="productss">
-                            <img  src="assets/img/chao3.jpg" alt="product img"
+                            <img src="assets/img/LX - HERMES_15x19x32x40.jpg" alt="product img" class="products__img">
+                            <h2 class="products__title">
+                                LX - HERMES
+                            </h2>
+                            <button data-image="./assets/img/LX - HERMES_15x19x32x40.jpg" class="btn">Mua ngay</button>
+                        </div>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img src="assets/img/LX-Chanel Bag _15x19x32x40.jpg" alt="product img"
                                 class="products__img">
                             <h2 class="products__title">
-                                Product 4
+                                LX-Chanel
                             </h2>
 
-                            <span class="products__price">
-                                400d
-                            </span>
-                            <button data-image="./assets/img/chao3.jpg" class="btn">Mua ngay</button>
+                            <button data-image="./assets/img/LX-Chanel Bag _15x19x32x40.jpg" class="btn">Mua
+                                ngay</button>
+                        </div>
+                    </article>
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img src="assets/img/LX-FENDI_15x19x32x40.jpg" alt="product img" class="products__img">
+                            <h2 class="products__title">
+                                LX-FENDI
+                            </h2>
+                            <button data-image="./assets/img/LX-FENDI_15x19x32x40.jpg" class="btn">Mua ngay</button>
+                        </div>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img src="assets/img/LX-Miss Dior 138 _15x19x32x40.jpg" alt="product img"
+                                class="products__img">
+                            <h2 class="products__title">
+                                LX-Miss Dior 138
+                            </h2>
+                            <button data-image="./assets/img/LX-Miss Dior 138 _15x19x32x40.jpg" class="btn">Mua
+                                ngay</button>
+                        </div>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <div class="productss">
+                            <img src="assets/img/LX-VERSACE 2 _15x19x32x40.jpg" alt="product img" class="products__img">
+                            <h2 class="products__title">
+                                LX-VERSACE 2
+                            </h2>
+                            <button data-image="./assets/img/LX-VERSACE 2 _15x19x32x40.jpg" class="btn">Mua
+                                ngay</button>
                         </div>
                     </article>
                 </div>
@@ -262,11 +295,12 @@
             </h2>
 
             <div class="brand__container container grid">
-                <img src="./assets/img/logo1.png" alt="brand img" class="brand__img">
-                <img src="./assets/img/logo2.png" alt="brand img" class="brand__img">
-                <img src="./assets/img/logo3.png" alt="brand img" class="brand__img">
-                <img src="./assets/img/logo4.png" alt="brand img" class="brand__img">
-
+                <img src="./assets/img/gucci.jpg" alt="brand img" class="brand__img">
+                <img style="border-radius: 50%;" src="./assets/img/dior.jpg" alt="brand img" class="brand__img">
+                <img src="./assets/img/chanel.png" alt="brand img" class="brand__img">
+                <img src="./assets/img/nike.jpg" alt="brand img" class="brand__img">
+                <img style="border-radius: 50%;" src="./assets/img/ysl.jpg" alt="brand img" class="brand__img">
+                <img src="./assets/img/celine.png" alt="brand img" class="brand__img">
             </div>
         </section>
 
@@ -388,6 +422,30 @@
                                     <img id="productImage1" src="" alt="Product Image"
                                         style="max-width: 100px; height: 100px;">
                                 </div>
+                                <div class="form-group">
+                                    <label for="sizeCheck">Size</label>
+                                    <div class="row">
+                                        <div class="form-check col ml-5">
+                                            <input class="form-check-input" type="radio" name="size" value="15" checked>
+                                            <label class="form-check-label">15</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="radio" name="size" value="19">
+                                            <label class="form-check-label">19</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col ml-5">
+                                            <input class="form-check-input" type="radio" name="size" value="32">
+                                            <label class="form-check-label">32</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input class="form-check-input" type="radio" name="size" value="40">
+                                            <label class="form-check-label">40</label>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group">
@@ -446,7 +504,158 @@
         </div>
     </div>
 
+    <!-- register Custom modal -->
+    <div class="modal" id="modalRegisterCustomize" tabindex="-1" role="dialog" aria-labelledby="modalRegisterCustomize"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalCenterTitle">Service</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Thông tin khách hàng</h5>
+                            <form id="registerCustomizeForm" method="post">
+                                <div class="form-group">
+                                    <label for="txtCustomerName">Họ tên</label><label style="color: red;">*</label>
+                                    <input type="text" name="customerName" id="txtCustomerName2" class="form-control"
+                                        placeholder="Enter your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtCustomerEmail">Email</label>
+                                    <input type="email" name="customerEmail" id="txtCustomerEmail2" class="form-control"
+                                        placeholder="Enter your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtCustomerPhone">Số điện thoại</label><label
+                                        style="color: red;">*</label>
+                                    <input type="text" name="customerPhone" id="txtCustomerPhone2" class="form-control"
+                                        placeholder="Enter your phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtAddress">Địa chỉ</label><label style="color: red;">*</label>
+                                    <input type="text" name="address" id="txtAddress2" class="form-control"
+                                        placeholder="Enter your address" required>
+                                </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h5 class="mb-5">Dịch vụ chi tiết</h5>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Chỉnh sửa kích thước"
+                                        id="changeSize" name="changeSize">
+                                    <label class="form-check-label" for="changeSize">
+                                        Chỉnh sửa kích thước
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="attachAccessories"
+                                        name="attachAccessories">
+                                    <label class="form-check-label" for="attachAccessories">
+                                        Thêm phụ kiện
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="stitching"
+                                        name="stitching">
+                                    <label class="form-check-label" for="stitching">
+                                        Tạo nét khâu thêu chi tiết
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="customizeBag"
+                                        name="customizeBag">
+                                    <label class="form-check-label" for="customizeBag">
+                                        Chỉnh sửa theo yêu cầu
+                                    </label>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" style="color: black;" class="btn btn-secondary"
+                        data-dismiss="modal">Đóng</button>
+                    <button type="button" style="color: black;" class="btn btn-primary" id="btnRegisterCustomize">Đăng
+                        ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- register Insurance modal -->
+    <div class="modal" id="modalInsurance" tabindex="-1" role="dialog" aria-labelledby="modalInsurance"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalCenterTitle">Đăng ký bảo hành</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Thông tin khách hàng</h5>
+                            <form id="registerInsurance" method="post">
+                                <div class="form-group">
+                                    <label for="txtCustomerName">Họ tên</label><label style="color: red;">*</label>
+                                    <input type="text" name="customerName3" id="txtCustomerName2" class="form-control"
+                                        placeholder="Enter your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtCustomerEmail">Email</label>
+                                    <input type="email" name="customerEmail3" id="txtCustomerEmail2"
+                                        class="form-control" placeholder="Enter your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtCustomerPhone">Số điện thoại</label><label
+                                        style="color: red;">*</label>
+                                    <input type="text" name="customerPhone3" id="txtCustomerPhone2" class="form-control"
+                                        placeholder="Enter your phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtAddress">Địa chỉ</label><label style="color: red;">*</label>
+                                    <input type="text" name="address3" id="txtAddress2" class="form-control"
+                                        placeholder="Enter your address" required>
+                                </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h5 class="mb-5">Thông tin phiếu mua hàng</h5>
+                            <div class="form-group">
+                                <label for="txtOrder">Mã bảo hành</label><label style="color: red;">*</label>
+                                <input type="text" name="insuranceCard" id="txtOrder" class="form-control"
+                                    placeholder="Nhập Mã bảo hành" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtDescription">Mô tả vấn đề</label>
+                                <input type="text" name="issueDescription" id="txtDescription" class="form-control"
+                                    placeholder="Mô tả vấn đề của bạn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" style="color: black;" class="btn btn-secondary"
+                        data-dismiss="modal">Đóng</button>
+                    <button type="button" style="color: black;" class="btn btn-primary" id="btnRegisterInsurance">Đăng
+                        ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="overlay"></div>
+
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
@@ -465,6 +674,8 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-line"></i>
     </a>
+
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -485,14 +696,7 @@
                     alert('Please fill in all required fields.');
                 } else {
                     document.getElementById('buyForm').submit();
-
-                    var modal = document.getElementById('modalBuy');
-                    modal.classList.remove('show');
-                    // // Ẩn modal bằng cách đặt style.display thành "none"
-                    modal.style.display = "none";
-
-                    // Loại bỏ lớp 'show' từ overlay khi đóng modal
-                    overlay.classList.remove('show');
+                    handleClose('modalBuy');
                 }
             })
 
@@ -508,22 +712,17 @@
                     // Lấy ra thông tin sản phẩm tương ứng
                     var product = this.closest('.products__card .productss');
                     var productName = product.querySelector('h2').innerText;
-                    var price = product.querySelector('span').innerText;
+                    // var price = product.querySelector('span').innerText;
                     var productImage = this.getAttribute('data-image');
 
                     // Đặt các giá trị vào form buymodal
                     document.getElementById('txtProductName').value = productName;
-                    document.getElementById('txtProductUnitPrice').value = price;
+                    // document.getElementById('txtProductUnitPrice').value = price;
                     document.getElementById('productImage1').src = productImage;
 
-                    calculateTotalPrice();
+                    // calculateTotalPrice();
 
-                    // Mở modal
-                    var modal = document.getElementById('modalBuy');
-                    modal.classList.add('show');
-                    modal.style.display = 'block';
-                    // Thêm lớp 'show' vào overlay khi mở modal
-                    overlay.classList.add('show');
+                    showModal('modalBuy');
                 });
             });
 
@@ -557,16 +756,39 @@
             // Thêm sự kiện click cho từng nút close
             closeButtons.forEach(function (button) {
                 button.addEventListener("click", function () {
-
-                    var modal = document.getElementById('modalBuy');
-                    modal.classList.remove('show');
-                    // // Ẩn modal bằng cách đặt style.display thành "none"
-                    modal.style.display = "none";
-
-                    // Loại bỏ lớp 'show' từ overlay khi đóng modal
-                    overlay.classList.remove('show');
+                    var modalId = this.closest('.modal').id;
+                    handleClose(modalId);
                 });
             });
+
+
+            var btnRegister = document.getElementById('registerCustomBtn');
+            btnRegister.addEventListener('click', () => {
+                showModal('modalRegisterCustomize');
+            })
+
+            var btnRegisterInsurance = document.getElementById('registerInsuranceBtn');
+            btnRegisterInsurance.addEventListener('click', () => {
+                showModal('modalInsurance');
+            })
+
+            function showModal(modalId) {
+                var modal = document.getElementById(modalId);
+                modal.classList.add('show');
+                modal.style.display = 'block';
+                // Thêm lớp 'show' vào overlay khi mở modal
+                overlay.classList.add('show');
+            }
+
+            function handleClose(elementId) {
+                var modal = document.getElementById(elementId);
+                modal.classList.remove('show');
+                //  Ẩn modal bằng cách đặt style.display thành "none"
+                modal.style.display = "none";
+
+                // Loại bỏ lớp 'show' từ overlay khi đóng modal
+                overlay.classList.remove('show');
+            }
 
         });
     </script>
