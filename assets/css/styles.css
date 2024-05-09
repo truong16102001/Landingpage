@@ -289,19 +289,18 @@ body.dark-theme {
 
 .home__images {
   position: relative;
-  width: 310px;
+  width: 1000px;
   justify-self: center;
-margin-left: 200px;
+  margin-left: 200px;
 }
 
-.home__images img:nth-child(1) {
+ .home__images img:nth-child(1) {
   width: 224px;
   height: 440px;
   position: absolute;
   right: -1.5rem;
   top: -9.5rem;
-
-}
+} 
 
 .home__images img:nth-child(2) {
   width: 180px;
@@ -412,7 +411,7 @@ margin-left: 200px;
 
 .collection__data-women {
   align-self: flex-end;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 /*=============== PRODUCTS ===============*/
@@ -525,6 +524,11 @@ margin-left: 200px;
 .footer__links,
 .footer__information {
   font-size: var(--small-font-size);
+}
+
+.footer__information1{
+font-size: 1.1rem;
+line-height: 30px;
 }
 
 .footer__links {
@@ -843,7 +847,7 @@ margin-left: 200px;
   }
 
   .collection__container {
-    height: 650px;
+    height: 700px;
     margin-bottom: 1rem;
   }
 
@@ -974,4 +978,12 @@ label {
   font-size: 18px;
 }
 
+.modal-content {
+  max-height: 95vh; /* Thiết lập chiều cao tối đa là 80% chiều cao của viewport */
+  overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá chiều cao của modal */
+}
+
+img{
+  border-radius: 10px;
+}
 

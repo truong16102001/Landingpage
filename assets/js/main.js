@@ -1,6 +1,6 @@
 // typed js
 var typedOptions = {
-  strings: ["Hi, I'm Chao", "Welcome!"],
+  strings: ["Hi, ", "Welcome!"],
   typeSpeed: 100,
   loop: true,
   loopCount: Infinity,
@@ -132,20 +132,101 @@ sr.reveal(`.new_card, .brand__img`, { interval: 100 });
 sr.reveal(`.collection__explore:nth-child(1)`, { origin: "right" });
 sr.reveal(`.collection__explore:nth-child(2)`, { origin: "left" });
 
-// send message to google sheet
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const message = document.getElementById("message");
+// register Customize
+const btnRegisterCustomize = document.getElementById("btnRegisterCustomize");
+btnRegisterCustomize.addEventListener("click", () => {
+  // Lấy dữ liệu từ các trường input
+  const name = document.getElementById("rcCustomerName").value;
+  const email = document.getElementById("rcCustomerEmail").value;
+  const phone = document.getElementById("rcCustomerPhone").value;
+  const customizes = [];
+  const checkboxes = document.querySelectorAll("input[name=customize]:checked");
+  checkboxes.forEach((checkbox) => {
+    customizes.push("- " + checkbox.value);
+  });
 
+  // Kiểm tra xem các trường đã được điền đầy đủ hay không
+  if (name && email && phone && customizes.length > 0) {
+    const data = {
+      name: name,
+      email: email,
+      phone: phone,
+      customizes: customizes.join("\n"),
+    };
+    postDataCustomize(data);
+  } else {
+    alert("Please fill all of required input fields");
+  }
+});
+
+async function postDataCustomize(data) {
+  const formData = new FormData();
+  formData.append("entry.2104221524", data.name);
+  formData.append("entry.1709008458", data.email);
+  formData.append("entry.1546989333", data.phone);
+  formData.append("entry.98865928", data.customizes);
+  await fetch(
+    "https://docs.google.com/forms/d/e/1FAIpQLScA59NfFGh3-FoljzT0zFnpoDhpNznEb1-cVXyDU6vdCRrD2g/formResponse",
+    {
+      method: "POST",
+      body: formData,
+      mode: "no-cors",
+    }
+  );
+
+  window.location.href = "/";
+}
+
+// register Insurance
+const btnRegisterInsurance = document.getElementById("btnRegisterInsurance");
+btnRegisterInsurance.addEventListener("click", () => {
+  // Lấy dữ liệu từ các trường input
+  const name = document.getElementById("riCustomerName").value;
+  const phone = document.getElementById("riCustomerPhone").value;
+  const warrantyCode = document.getElementById("insuranceCard").value;
+  const issue = document.getElementById("issueDescription").value;
+
+  // Kiểm tra xem các trường đã được điền đầy đủ hay không
+  if (name && phone && warrantyCode) {
+    const data = {
+      name: name,
+      phone: phone,
+      warrantyCode: warrantyCode,
+      issue: issue,
+    };
+    postDataInsurance(data);
+  } else {
+    alert("Please fill all of required input fields");
+  }
+});
+
+async function postDataInsurance(data) {
+  const formData = new FormData();
+  formData.append("entry.431012347", data.name);
+  formData.append("entry.1267840880", data.phone);
+  formData.append("entry.1106932096", data.warrantyCode);
+  formData.append("entry.602237901", data.issue);
+  await fetch(
+    "https://docs.google.com/forms/d/e/1FAIpQLSce6t6SgcgdM9gBZHxTMn3w3SinWKdBfufFlol8yb1GV3046w/formResponse",
+    {
+      method: "POST",
+      body: formData,
+      mode: "no-cors",
+    }
+  );
+
+  window.location.href = "/";
+}
+
+// contact form submit
 document.getElementById("contactForm").addEventListener("submit", (event) => {
   event.preventDefault(); // Ngăn chặn sự kiện mặc định của form
 
   // Lấy dữ liệu từ các trường input
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const message = document.getElementById("message").value;
+  const name = document.getElementById("ctname").value;
+  const email = document.getElementById("ctemail").value;
+  const phone = document.getElementById("ctphone").value;
+  const message = document.getElementById("ctmessage").value;
 
   // Kiểm tra xem các trường đã được điền đầy đủ hay không
   if (name && email && phone) {
@@ -155,21 +236,89 @@ document.getElementById("contactForm").addEventListener("submit", (event) => {
       phone: phone,
       message: message,
     };
-    postData(data);
+    postDataContact(data);
   } else {
     alert("Please fill all of required input fields");
   }
 });
 
-async function postData(data) {
+async function postDataContact(data) {
   const formData = new FormData();
-  formData.append("entry.622284216", data.name);
-  formData.append("entry.1912154255", data.email);
-  formData.append("entry.2027738941", data.phone);
-  formData.append("entry.2029031814", data.message);
+  formData.append("entry.2055079637", data.name);
+  formData.append("entry.1732830301", data.email);
+  formData.append("entry.1824102721", data.phone);
+  formData.append("entry.1122189729", data.message);
 
   await fetch(
-    "https://docs.google.com/forms/d/e/1FAIpQLSdnyyfRuUDS791GEjpzilc69vAvyW6jDI4nFlPosyHSz2qu_A/formResponse",
+    "https://docs.google.com/forms/d/e/1FAIpQLSch_dkFoWPflOGfLZ3GW7WgCVu064JVk-AiUSAWieRPVMyZ6g/formResponse",
+    {
+      method: "POST",
+      body: formData,
+      mode: "no-cors",
+    }
+  );
+
+  window.location.href = "/";
+}
+
+//buy
+var btnInsert = document.getElementById("btnInsert");
+btnInsert.addEventListener("click", () => {
+  // Lấy giá trị của các trường nhập liệu
+  const customerName = document.getElementById("buyCustomerName").value.trim();
+  const customerPhone = document
+    .getElementById("buyCustomerPhone")
+    .value.trim();
+  const address = document.getElementById("buyAddress").value.trim();
+  const email = document.getElementById("buyCustomerEmail").value.trim();
+  const buyProductName = document
+    .getElementById("buyProductName")
+    .innerText.trim();
+  const size = document.querySelector("input[name=size]:checked");
+  const buyProductUnitPrice = document
+    .getElementById("buyProductUnitPrice")
+    .innerText.trim();
+  const buyQuantity = document.getElementById("buyQuantity").value.trim();
+  const note = document.getElementById("buyNote").value.trim();
+
+  const buyTotalPrice = document
+    .getElementById("buyTotalPrice")
+    .innerText.trim();
+
+  if (customerName && customerPhone && email && address) {
+    const data = {
+      customerName: customerName,
+      email: email,
+      customerPhone: customerPhone,
+      buyProductName: buyProductName,
+      size: size,
+      buyProductUnitPrice : buyProductUnitPrice,
+      buyQuantity: buyQuantity,
+      buyTotalPrice: buyTotalPrice,
+      address: address,
+      note: note,
+    };
+    postDataBuy(data);
+  } else {
+    alert("Please fill all of required input fields");
+  }
+});
+
+async function postDataBuy(data) {
+  const formData = new FormData();
+  formData.append("entry.1496038398", data.customerName);
+  formData.append("entry.1843664615", data.email);
+  formData.append("entry.997279394", data.customerPhone);
+  formData.append("entry.951268168", data.buyProductName);
+  formData.append("entry.306339524", data.size.value);
+  formData.append("entry.1244635963", data.buyProductUnitPrice);
+  formData.append("entry.878237130", data.buyQuantity);
+  formData.append("entry.1388097074", data.buyTotalPrice);
+  formData.append("entry.1816794654", data.address);
+  formData.append("entry.1681591743", data.note);
+
+  await fetch(
+    "https://docs.google.com/forms/d/e/1FAIpQLSdrNmTWyl7bizrS57CllJD4JUtG-OnxcV9tIAWbd3yUKjJBsw/formResponse",
     {
       method: "POST",
       body: formData,
