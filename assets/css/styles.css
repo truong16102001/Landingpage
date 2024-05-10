@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -294,12 +295,136 @@ body.dark-theme {
   margin-left: 200px;
 }
 
+
+
+.home__images img {
+  width: 200px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+  height: auto;
+  transition: transform 0.5s ease; 
+  /* animation: rotateImage 3s linear infinite; */
+
+}
+
+.home__images img:hover {
+  transform: rotateY(180deg); 
+}
+
+/* @keyframes rotateImage {
+  0% {
+      transform: rotateY(0deg); 
+  }
+  100% {
+      transform: rotateY(180deg); 
+  }
+} */
+
+.home__images img {
+  background-color: transparent; /* Đặt màu nền của ảnh thành trong suốt */
+}
+
+
+
+  .slider_container{
+  margin-bottom: 70px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  word-wrap: break-word;
+  /* font-family: 'Lato', sans-serif; */
+   font-family: 'Raleway', sans-serif;
+} 
+
+ .slider_container span:nth-child(2){
+  animation-delay: .15s;
+}
+.slider_container span:nth-child(3){
+  animation-delay: .3s;
+}
+.slider_container span:nth-child(4){
+  animation-delay: .45s;
+}
+.slider_container span:nth-child(5){
+  animation-delay: .6s;
+}
+.slider_container span:nth-child(6){
+  animation-delay: .75s;
+}
+.slider_container span:nth-child(7){
+  animation-delay: .9s;
+}
+.slider_container span:nth-child(8){
+  animation-delay: 1s;
+}
+.slider_container span:nth-child(9){
+  animation-delay: 1.2s;
+} 
+
+
+ .slider_container span{
+  color: #27ae60;
+  opacity: 0;
+  display: inline-block;
+  text-shadow: 3px 3px 4px rgba(0,0,0,.2);
+  animation: animate 3s forwards infinite;
+  transform: translate(-500px, 0) scale(0);
+} 
+
+
+ @keyframes animate {
+  60%{
+    transform: translate(50px, 0) scale(1);
+    color: #333;
+  }
+  80%{
+    transform: translate(50px, 0) scale(1);
+    color: #99bfaa;
+  }
+  99%{
+    transform: translate(0) scale(1.2);
+    color: #ed5d5d;
+  }
+  100%{
+    transform: translate(0) scale(1);
+    color: #8ce2b0;
+    opacity: 1;
+  }
+} 
+
+/* .slider_container{
+  margin-bottom: 70px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 30px;
+  background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 4px rgba(0,0,0,.2);
+  font-family: 'Raleway', sans-serif;
+} */
+
+/* .dark-theme .slider_container span {
+  color: white; 
+  opacity: 0.8; 
+  text-shadow: 3px 3px 4px rgba(0,0,0,.2); 
+  background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  user-select: none;
+} */
+
+
+
+
+
  .home__images img:nth-child(1) {
   width: 224px;
   height: 440px;
   position: absolute;
-  right: -1.5rem;
-  top: -9.5rem;
+  right: 28.5rem;
+  top: -14.5rem;
 } 
 
 .home__images img:nth-child(2) {
@@ -370,6 +495,16 @@ body.dark-theme {
 
 .new__link:hover i {
   transform: translateX(0.25rem);
+}
+
+
+.new__card img{
+  transition: transform 0.5s ease; 
+}
+
+.new__card img:hover{
+  transform: rotateY(180deg); 
+
 }
 
 /*=============== COLLECTION ===============*/
@@ -641,7 +776,7 @@ line-height: 30px;
   }
 
   .home__images {
-    width: 248px;
+    width: 500px;
   }
 
   .home__data {
@@ -715,7 +850,7 @@ line-height: 30px;
   }
 
   .home__images {
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
 
   .brand__container {
@@ -817,19 +952,20 @@ line-height: 30px;
   }
 
   .home__images {
-    width: 500px;
+    width: 700px;
     margin-top: 8rem;
     transform: translate(-3rem);
   }
 
   .home__images img:nth-child(1) {
-    width: 345px;
-    top: -14.5px;
-    left: 220.5px;
+    width: 400px;
+    top: -160px;
+    left: 240px;
   }
 
   .home__images img:nth-child(2) {
-    width: 277px;
+    top: -30px;
+    width: 300px;
   }
 
   .new__container {

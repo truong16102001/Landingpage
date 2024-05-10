@@ -1,6 +1,6 @@
 // typed js
 var typedOptions = {
-  strings: ["Hi, ", "Welcome!"],
+  strings: ["Hi, I'm Elite", "Welcome!"],
   typeSpeed: 100,
   loop: true,
   loopCount: Infinity,
